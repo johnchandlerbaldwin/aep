@@ -33,10 +33,6 @@ public enum Unit {
         return (size + offset) * inBaseUnits / unit.inBaseUnits - unit.offset;
     }
 
-    public double inBase(double amount) {
-        return amount * this.inBaseUnits;
-    }
-
     @Override
     public String toString() {
         return name;

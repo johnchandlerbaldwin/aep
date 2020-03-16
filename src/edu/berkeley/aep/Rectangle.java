@@ -1,16 +1,28 @@
 package edu.berkeley.aep;
 
+import java.util.HashMap;
+import java.util.Map;
+
+// Understands a four-sided figure with four right angles
 public class Rectangle {
-    private final int width;
-    private final int height;
 
-    public Rectangle(int width, int height) {
+    public final int length;
+    public final int width;
 
-        this.width = width;
-        this.height = height;
+    public static Rectangle createSquare(int side) {
+        return new Rectangle(side, side);
     }
 
-    public int area() {
-        return width * height;
+    public Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    protected int area() {
+        return length * width;
+    }
+
+    public int perimeter() {
+        return 2 * length + 2 * width;
     }
 }

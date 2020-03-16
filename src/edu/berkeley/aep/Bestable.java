@@ -1,4 +1,5 @@
 package edu.berkeley.aep;
 
-public class Bestable {
+public interface Bestable<T extends Bestable> {
+    boolean betterThan(T other);
 }
