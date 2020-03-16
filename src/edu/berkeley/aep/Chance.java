@@ -1,4 +1,4 @@
 package edu.berkeley.aep;
 
-public class Quantity {
+public class Chance {
 }
